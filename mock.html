@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9fa;
+        }
+        /* Styles for Plan Section */
+        .plan-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .plan {
+            text-align: center;
+            padding: 3px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            flex: 1;
+        }
+        .plan h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000; /* Purple color */
+        }
+        .plan button {
+            background-color: #430e57; /* Purple button */
+            color: #ffffff;
+            border: none;
+            padding: 2px 50px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .plan button:hover {
+            background-color: #6a249b;
+        }
+        .enterprise button {
+            background-color: #430e57; /* Purple button for Enterprise */
+            color: #ffffff;
+            border: none;
+            white-space: nowrap; /* Ensure the text stays on one line */
+        }
+        .enterprise button:hover {
+            background-color: #430e57;
+        }
+
+        /* Styles for Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #E5E4E2;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 2px solid #ddd;
+            padding: 12px;
+            text-align:center;
+        }
+        th {
+            background-color: #e6e6e6;
+            font-weight: bold;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .feature-section {
+            text-align: left;
+            font-weight: bold;
+            background-color: #A9A9A9;
+            color: #0000;
+        }
+        .checkmark {
+            font-size: 20px;
+            color: rgb(63, 63, 255);
+        }
+        td {
+            color: #000000;
+        }
+        td:hover {
+            background-color: #f1f1f1;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Plan Section -->
+    <div class="plan-section">
+        <div class="plan">
+            <h2>Free</h2>
+            <button>GET STARTED</button>
+        </div>
+        <div class="plan">
+            <h2>Pro</h2>
+            <button>GET STARTED</button>
+        </div>
+        <div class="plan">
+            <h2>Business+</h2>
+            <button>GET STARTED</button>
+        </div>
+        <div class="plan enterprise">
+            <h2>Enterprise Grid</h2>
+            <button>TALK TO SALES</button>
+        </div>
+    </div>
+
+    <!-- First Table -->
+    <table>
+        <tbody>
+            <tr class="feature-section">
+                <td colspan="1"style="text-align: left;"><b>Administration</b></td>
+            </tr>
+            <tr>
+                <td class="underline" style="text-align: left;">Workspaces</td>
+                <td>1</td>
+
+                <td>1</td>
+                <td>1</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Manage channel posting permissions</td>
+                <td class="underline">Limited to #general channel only</td>
+                <td class="underline">Limited to #general channel only</td>
+                <td class="underline">Unlimited number of channels</td>
+                <td class="underline">Unlimited number of channels</td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Custom user groups</td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+                <td><span class="checkmark">&#10003;</span></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">User management with SCIM provisioning</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Supports guests</td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Support for integrations with DLP, e-discovery, and offline backup providers</td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Domain claiming</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Customized terms of service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Granular roles</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Admin analytics API</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Admin analytics dashboard</td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+            <tr>
+                <td class="underline"style="text-align: left;">Message activity analytics</td>
+                <td></td>
+                <td></td>
+                <td><span class="checkmark">&#10003;</span></td>
+                <td><span class="checkmark">&#10003;</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Second Table -->
+    <style>
+        .support-header {
+            background-color: #666666;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+        }
+        
+        .alternate-row {
+            background-color: #f2f2f2;
+        }
+        </style>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="" class="support-header">Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="alternate-row">
+                    <td>Access to customer support</td>
+                    <td>Standard support</td>
+                    <td>24/7 support</td>
+                    <td>24/7 support with four-hour first response time</td>
+                    <td>24/7 priority support with four-hour first response time</td>
+                </tr>
+            </tbody>
+        </table>
